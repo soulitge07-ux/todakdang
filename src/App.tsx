@@ -198,26 +198,26 @@ export default function App() {
       name: "Todak Signature",
       title: "토닥당 생과일 모찌 컬렉션",
       items: [
-        { title: "딸기 모찌", price: "3,800원", description: "상큼한 딸기와 달콤한 팥의 완벽한 밸런스, 실패 없는 베스트셀러", image: "https://picsum.photos/seed/strawberry/400/400", color: "bg-pink-100" },
-        { title: "두바이초콜렛 모찌", price: "6,300원", description: "바삭한 카다이프와 진한 피스타치오의 만남, 나를 위한 가장 핫한 보상", image: "https://picsum.photos/seed/dubai-choco/400/400", color: "bg-amber-100" },
-        { title: "샤인머스캣 모찌", price: "4,000원", description: "탱글한 과즙이 통째로!", image: "https://picsum.photos/seed/muscat/400/400", color: "bg-green-100" },
-        { title: "샤인 페레로로쉐", price: "4,000원", description: "샤인머스캣과 진한 초코의 이색 조화", image: "https://picsum.photos/seed/ferrero/400/400", color: "bg-green-50" },
-        { title: "통귤 모찌", price: "4,000원", description: "비타민이 팡팡 터지는 시원한 맛", image: "https://picsum.photos/seed/tangerine/400/400", color: "bg-orange-100" },
-        { title: "무화과 모찌", price: "3,800원", description: "가을의 깊은 단맛과 독보적인 식감", image: "https://picsum.photos/seed/fig/400/400", color: "bg-purple-100" },
-        { title: "골드키위 모찌", price: "4,000원", description: "새콤달콤 기분 좋은 에너지", image: "https://picsum.photos/seed/goldkiwi/400/400", color: "bg-yellow-50" },
-        { title: "키위 모찌", price: "3,500원", description: "뒷맛까지 깔끔한 상큼함", image: "https://picsum.photos/seed/kiwi/400/400", color: "bg-emerald-50" },
-        { title: "파인애플 모찌", price: "3,500원", description: "시원 청량 과즙 듬뿍", image: "https://picsum.photos/seed/pineapple/400/400", color: "bg-yellow-100" },
-        { title: "멜론 모찌", price: "4,000원", description: "부드러운 향긋함이 사르르", image: "https://picsum.photos/seed/melon/400/400", color: "bg-lime-50" },
-        { title: "아이스 홍시 모찌", price: "4,300원", description: "시원하고 진한 달콤함, 어르신 추천!", image: "https://picsum.photos/seed/persimmon/400/400", color: "bg-orange-50" },
-        { title: "통곶감 모찌", price: "4,000원", description: "명품 곶감 한 알이 통째로! 입안 가득 터지는 진득한 달콤함과 쫀득함의 정점", image: "https://picsum.photos/seed/dried-persimmon/400/400", color: "bg-orange-100" },
+        { title: "딸기 모찌", price: "3,800원", description: "상큼한 딸기와 달콤한 팥의 완벽한 밸런스, 실패 없는 베스트셀러", image: "/모찌_분리/딸기모찌.png", color: "bg-pink-100" },
+        { title: "두바이초콜렛 모찌", price: "6,300원", description: "바삭한 카다이프와 진한 피스타치오의 만남, 나를 위한 가장 핫한 보상", image: "/모찌_분리/두바이초콜렛모찌.png", color: "bg-amber-100" },
+        { title: "샤인머스캣 모찌", price: "4,000원", description: "탱글한 과즙이 통째로!", image: "/모찌_분리/샤인머스켓모찌.png", color: "bg-green-100" },
+        { title: "샤인 페레로로쉐", price: "4,000원", description: "샤인머스캣과 진한 초코의 이색 조화", image: "/모찌_분리/샤인페레로로셰모찌.png", color: "bg-green-50" },
+        { title: "통귤 모찌", price: "4,000원", description: "비타민이 팡팡 터지는 시원한 맛", image: "/모찌_분리/통귤모찌.png", color: "bg-orange-100" },
+        { title: "무화과 모찌", price: "3,800원", description: "가을의 깊은 단맛과 독보적인 식감", image: "/모찌_분리/무화과모찌.png", color: "bg-purple-100" },
+        { title: "골드키위 모찌", price: "4,000원", description: "새콤달콤 기분 좋은 에너지", image: "/모찌_분리/골드키위모찌.png", color: "bg-yellow-50" },
+        { title: "키위 모찌", price: "3,500원", description: "뒷맛까지 깔끔한 상큼함", image: "/모찌_분리/키위모찌.png", color: "bg-emerald-50" },
+        { title: "파인애플 모찌", price: "3,500원", description: "시원 청량 과즙 듬뿍", image: "/모찌_분리/파인애플모찌.png", color: "bg-yellow-100" },
+        { title: "멜론 모찌", price: "4,000원", description: "부드러운 향긋함이 사르르", image: "/모찌_분리/멜론모찌.png", color: "bg-lime-50" },
+        { title: "아이스 홍시 모찌", price: "4,300원", description: "시원하고 진한 달콤함, 어르신 추천!", image: "/모찌_분리/아이스홍시모찌.png", color: "bg-orange-50" },
+        { title: "통곶감 모찌", price: "4,000원", description: "명품 곶감 한 알이 통째로! 입안 가득 터지는 진득한 달콤함과 쫀득함의 정점", image: "/모찌_분리/통곶감모찌.png", color: "bg-orange-100" },
       ]
     },
     {
       name: "Package",
       title: "소중한 마음을 전하는 선물세트",
       items: [
-        { title: "[포장특가] 오늘도 수고한 나를 위한 '토닥 5구'", price: "17,000원", description: "구성 고민 없이 알차게! 퇴근길 나에게 주는 작은 사치", image: "https://picsum.photos/seed/package-5/400/400", color: "bg-rose-50" },
-        { title: "[선물 1위] 마음을 전하는 '보자기 힐링 7구'", price: "24,000원", description: "품격 있는 보자기 포장 포함, 감사와 응원을 전하는 최고의 선택", image: "https://picsum.photos/seed/package-7/400/400", color: "bg-indigo-50" },
+        { title: "[포장특가] 오늘도 수고한 나를 위한 '토닥 5구'", price: "17,000원", description: "구성 고민 없이 알차게! 퇴근길 나에게 주는 작은 사치", image: "/모찌_분리/7구세트.png", color: "bg-rose-50" },
+        { title: "[선물 1위] 마음을 전하는 '보자기 힐링 7구'", price: "24,000원", description: "품격 있는 보자기 포장 포함, 감사와 응원을 전하는 최고의 선택", image: "/모찌_분리/7구 보자기.png", color: "bg-indigo-50" },
       ]
     },
     {
@@ -225,8 +225,16 @@ export default function App() {
       title: "신선함을 담은 과일 간식",
       subtitle: "모찌뿐만 아니라 신선한 생과일 그 자체도 즐겨보세요.",
       items: [
-        { title: "과일 도시락", price: "8,500원", description: "8가지 프리미엄 과일을 한 번에", image: "https://picsum.photos/seed/fruit-box/400/400", color: "bg-emerald-100" },
-        { title: "컵 과일", price: "5,500원", description: "6가지 엄선 과일로 가볍게 채우는 비타민", image: "https://picsum.photos/seed/cup-fruit/400/400", color: "bg-orange-50" },
+        { title: "컵 과일", price: "5,500원", description: "과일 소믈리에 엄선, 6가지 프리미엄 제철 과일로 신선한 하루 비타민을 채우세요", image: "/모찌_분리/컵과일.png", color: "bg-orange-50" },
+        { title: "딸기 주스", price: "6,500원", description: "500ml 프리미엄 생과일주스 · 새빨간 제철 딸기를 통째로 갈아 만든 진한 한 잔", image: "/토닥생과일주스/A딸기주스.png", color: "bg-pink-100" },
+        { title: "딸기 바나나 주스", price: "6,500원", description: "500ml 프리미엄 생과일주스 · 상큼한 딸기와 부드러운 바나나의 황금 조합", image: "/토닥생과일주스/A딸기바나나주스.png", color: "bg-rose-100" },
+        { title: "망고 주스", price: "6,800원", description: "500ml 프리미엄 생과일주스 · 잘 익은 애플망고의 진득한 단맛이 그대로", image: "/토닥생과일주스/A망고주스.png", color: "bg-yellow-100" },
+        { title: "바나나 주스", price: "5,800원", description: "500ml 프리미엄 생과일주스 · 부드럽고 든든한 한 잔, 아침 식사 대용으로 추천", image: "/토닥생과일주스/A바나나주스.png", color: "bg-yellow-50" },
+        { title: "수박 주스", price: "6,500원", description: "500ml 프리미엄 생과일주스 · 한여름 갈증을 시원하게 풀어주는 청량 한 잔", image: "/토닥생과일주스/A수박주스.png", color: "bg-red-100" },
+        { title: "오렌지 주스", price: "6,300원", description: "500ml 프리미엄 생과일주스 · 매일 아침 직접 짜낸 비타민 가득한 상큼함", image: "/토닥생과일주스/A오렌지주스.png", color: "bg-orange-100" },
+        { title: "청포도 주스", price: "6,800원", description: "500ml 프리미엄 생과일주스 · 향긋하고 깔끔한 단맛, 여운까지 우아한 한 잔", image: "/토닥생과일주스/A청포도주스.png", color: "bg-lime-100" },
+        { title: "키위 주스", price: "6,500원", description: "500ml 프리미엄 생과일주스 · 새콤달콤 톡 쏘는 그린 비타민 충전", image: "/토닥생과일주스/A키위주스.png", color: "bg-emerald-100" },
+        { title: "토마토 주스", price: "6,300원", description: "500ml 프리미엄 생과일주스 · 100% 완숙 토마토만 담은 건강한 진한 맛", image: "/토닥생과일주스/A토마토주스.png", color: "bg-red-50" },
       ]
     }
   ];
@@ -319,8 +327,8 @@ export default function App() {
               className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl"
             >
               <img 
-                src="https://picsum.photos/seed/fruit-story/800/1000" 
-                alt="Brand Story" 
+                src="/owner.png"
+                alt="Brand Story"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
@@ -401,11 +409,11 @@ export default function App() {
                         transition={{ delay: index * 0.05 }}
                         className={`group relative p-8 rounded-[2.5rem] ${item.color} border border-black/5 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 cursor-pointer flex flex-col h-full`}
                       >
-                        <div className="aspect-square rounded-3xl overflow-hidden mb-8 bg-white/50 shadow-inner">
-                          <img 
-                            src={item.image} 
-                            alt={item.title} 
-                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                        <div className="aspect-square rounded-3xl overflow-hidden mb-8 bg-white/50 shadow-inner p-6">
+                          <img
+                            src={item.image}
+                            alt={item.title}
+                            className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700"
                             referrerPolicy="no-referrer"
                           />
                         </div>
