@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Song+Myung&family=Jua&display=swap');
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@theme {
+  --font-display: "Song Myung", serif;
+  --font-sans: "Jua", sans-serif;
+  --font-heading: "Jua", sans-serif;
+  
+  --color-brand-red: #D64545;
+  --color-brand-ivory: #FFF9F5;
+  --color-brand-brown: #5D4037;
+  
+  /* Image-inspired watercolor palette */
+  --color-watercolor-pink: #FCE4EC;
+  --color-watercolor-blue: #E1F5FE;
+  --color-watercolor-purple: #F3E5F5;
+  --color-watercolor-yellow: #FFF9C4;
+  --color-ms-pink: #EC407A;
+  --color-ms-blue: #29B6F6;
+  --color-ms-purple: #AB47BC;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-ivory text-brand-brown font-sans antialiased;
+    background-image: 
+      radial-gradient(at 0% 0%, var(--color-watercolor-pink) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, var(--color-watercolor-blue) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, var(--color-watercolor-purple) 0px, transparent 50%),
+      radial-gradient(at 0% 100%, var(--color-watercolor-yellow) 0px, transparent 50%);
+    background-attachment: fixed;
+  }
+  
+  h1, h2, h3 {
+    @apply font-display tracking-tight;
+  }
+}
+
+.ms-split-section {
+  @apply grid grid-cols-1 md:grid-cols-2 min-h-[80vh];
+}
+
+.ms-content-box {
+  @apply flex flex-col justify-center p-12 md:p-24;
+}
+
+.ms-image-box {
+  @apply relative overflow-hidden h-full min-h-[400px];
+}
+
+.ms-image-box img {
+  @apply absolute inset-0 w-full h-full object-cover;
+}
