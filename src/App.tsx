@@ -226,15 +226,37 @@ export default function App() {
       subtitle: "모찌뿐만 아니라 신선한 생과일 그 자체도 즐겨보세요.",
       items: [
         { title: "컵 과일", price: "5,500원", description: "과일 소믈리에 엄선, 6가지 프리미엄 제철 과일로 신선한 하루 비타민을 채우세요", image: "/모찌_분리/컵과일.png", color: "bg-orange-50" },
-        { title: "딸기 주스", price: "6,500원", description: "500ml 프리미엄 생과일주스 · 새빨간 제철 딸기를 통째로 갈아 만든 진한 한 잔", image: "/토닥생과일주스/A딸기주스.png", color: "bg-pink-100" },
-        { title: "딸기 바나나 주스", price: "6,500원", description: "500ml 프리미엄 생과일주스 · 상큼한 딸기와 부드러운 바나나의 황금 조합", image: "/토닥생과일주스/A딸기바나나주스.png", color: "bg-rose-100" },
-        { title: "망고 주스", price: "6,800원", description: "500ml 프리미엄 생과일주스 · 잘 익은 애플망고의 진득한 단맛이 그대로", image: "/토닥생과일주스/A망고주스.png", color: "bg-yellow-100" },
-        { title: "바나나 주스", price: "5,800원", description: "500ml 프리미엄 생과일주스 · 부드럽고 든든한 한 잔, 아침 식사 대용으로 추천", image: "/토닥생과일주스/A바나나주스.png", color: "bg-yellow-50" },
-        { title: "수박 주스", price: "6,500원", description: "500ml 프리미엄 생과일주스 · 한여름 갈증을 시원하게 풀어주는 청량 한 잔", image: "/토닥생과일주스/A수박주스.png", color: "bg-red-100" },
-        { title: "오렌지 주스", price: "6,300원", description: "500ml 프리미엄 생과일주스 · 매일 아침 직접 짜낸 비타민 가득한 상큼함", image: "/토닥생과일주스/A오렌지주스.png", color: "bg-orange-100" },
-        { title: "청포도 주스", price: "6,800원", description: "500ml 프리미엄 생과일주스 · 향긋하고 깔끔한 단맛, 여운까지 우아한 한 잔", image: "/토닥생과일주스/A청포도주스.png", color: "bg-lime-100" },
-        { title: "키위 주스", price: "6,500원", description: "500ml 프리미엄 생과일주스 · 새콤달콤 톡 쏘는 그린 비타민 충전", image: "/토닥생과일주스/A키위주스.png", color: "bg-emerald-100" },
-        { title: "토마토 주스", price: "6,300원", description: "500ml 프리미엄 생과일주스 · 100% 완숙 토마토만 담은 건강한 진한 맛", image: "/토닥생과일주스/A토마토주스.png", color: "bg-red-50" },
+      ]
+    },
+    {
+      name: "Fresh Juice",
+      title: "토닥 생과일 주스",
+      subtitle: "토닥당에서 엄선한 신선한 프리미엄 생과일을 그대로 갈아 보틀에 담아드립니다 · 1보틀 500ml",
+      items: [
+        { title: "딸기 주스", price: "5,500원", description: "새빨간 제철 딸기를 통째로 갈아 만든 진한 한 잔", image: "/토닥생과일주스/A딸기주스.png", color: "bg-pink-100" },
+        { title: "딸기 바나나 주스", price: "5,500원", description: "상큼한 딸기와 부드러운 바나나의 황금 조합", image: "/토닥생과일주스/A딸기바나나주스.png", color: "bg-rose-100" },
+        { title: "망고 주스", price: "5,500원", description: "잘 익은 애플망고의 진득한 단맛이 그대로", image: "/토닥생과일주스/A망고주스.png", color: "bg-yellow-100" },
+        { title: "바나나 주스", price: "5,500원", description: "부드럽고 든든한 한 잔, 아침 식사 대용으로 추천", image: "/토닥생과일주스/A바나나주스.png", color: "bg-yellow-50" },
+        { title: "수박 주스", price: "5,500원", description: "한여름 갈증을 시원하게 풀어주는 청량 한 잔", image: "/토닥생과일주스/A수박주스.png", color: "bg-red-100" },
+        { title: "오렌지 주스", price: "5,500원", description: "매일 아침 직접 짜낸 비타민 가득한 상큼함", image: "/토닥생과일주스/A오렌지주스.png", color: "bg-orange-100" },
+        { title: "청포도 주스", price: "5,500원", description: "향긋하고 깔끔한 단맛, 여운까지 우아한 한 잔", image: "/토닥생과일주스/A청포도주스.png", color: "bg-lime-100" },
+        { title: "키위 주스", price: "5,500원", description: "새콤달콤 톡 쏘는 그린 비타민 충전", image: "/토닥생과일주스/A키위주스.png", color: "bg-emerald-100" },
+        { title: "토마토 주스", price: "5,500원", description: "100% 완숙 토마토만 담은 건강한 진한 맛", image: "/토닥생과일주스/A토마토주스.png", color: "bg-red-50" },
+      ]
+    },
+    {
+      name: "Bingsu",
+      title: "토닥타래빙수",
+      subtitle: "신선한 프리미엄 재료로 매일 정성껏 준비합니다 · 부드럽고 시원한 실타래빙수, 취향에 맞는 토핑으로 나만의 빙수를 완성하세요 · 본품만으로도 충분히 맛있지만요 :) (기본제공 한입과일모찌 1구 + 컷팅과일 1컵 + 팥 + 인절미떡 + 콘프라이트 + 초코쿠키분태)",
+      items: [
+        { title: "토닥당 밀크 빙수", price: "9,500원", description: "토닥당의 시그니처, 부드럽고 진한 우유 결의 정석 빙수", image: "/토닥타래빙수/토닥당 밀크빙수.png", color: "bg-orange-50" },
+        { title: "딸기 빙수", price: "12,500원", description: "새빨간 제철 딸기를 듬뿍 올린 클래식 인기 메뉴", image: "/토닥타래빙수/딸기.png", color: "bg-pink-100" },
+        { title: "망고 빙수", price: "12,500원", description: "잘 익은 애플망고의 진득한 단맛이 시원하게 사르르", image: "/토닥타래빙수/망고.png", color: "bg-yellow-100" },
+        { title: "청포도 빙수", price: "12,500원", description: "향긋하고 깔끔한 단맛, 여운까지 우아한 한 그릇", image: "/토닥타래빙수/청포도.png", color: "bg-lime-100" },
+        { title: "멜론 빙수", price: "13,500원", description: "달콤한 멜론과 과일 모찌의 풍성한 조화", image: "/토닥타래빙수/멜론 빙수와 과일 모찌.png", color: "bg-green-50" },
+        { title: "파인애플 빙수", price: "12,500원", description: "톡 쏘는 청량감, 무더운 날을 위한 트로피컬 한 잔", image: "/토닥타래빙수/파인.png", color: "bg-yellow-50" },
+        { title: "녹차 빙수", price: "10,500원", description: "진한 우지말차의 깊은 풍미, 어른들을 위한 한 그릇", image: "/토닥타래빙수/녹차.png", color: "bg-emerald-100" },
+        { title: "초코 빙수", price: "11,500원", description: "진한 초코와 과일 토핑이 어우러진 달콤한 디저트", image: "/토닥타래빙수/초코빙수와 과일 토핑.png", color: "bg-amber-100" },
       ]
     }
   ];
@@ -780,10 +802,10 @@ export default function App() {
                     </div>
                   </div>
 
-                  <button className="w-full mt-16 py-8 bg-white text-brand-brown rounded-3xl font-bold text-lg hover:bg-ms-pink hover:text-white transition-all duration-500 flex items-center justify-center gap-4 group">
+                  <a href="tel:051-626-0359" className="w-full mt-16 py-8 bg-white text-brand-brown rounded-3xl font-bold text-lg hover:bg-ms-pink hover:text-white transition-all duration-500 flex items-center justify-center gap-4 group">
                     <Phone className="w-6 h-6 group-hover:animate-bounce" />
-                    케이터링 문의하기
-                  </button>
+                    케이터링 문의하기 (051-626-0359)
+                  </a>
                 </div>
                 
                 {/* Decorative Elements */}
@@ -1037,11 +1059,11 @@ export default function App() {
             </div>
 
             <div className="mt-24 p-12 bg-white rounded-[3rem] border border-black/5 text-center">
-              <p className="text-lg font-heading opacity-60 mb-8">더 궁금하신 점은 네이버 톡톡으로 문의하시면 사장님이 직접 답변해 드립니다!</p>
-              <button className="px-12 py-6 bg-green-500 text-white rounded-2xl font-bold text-lg hover:bg-green-600 transition-colors inline-flex items-center gap-4">
-                <MessageSquare className="w-6 h-6" />
-                네이버 톡톡 문의하기
-              </button>
+              <p className="text-lg font-heading opacity-60 mb-8">제품 관련 궁금한 점, 프랜차이즈 및 협업 문의는 매장으로 전화 주시면 사장님이 직접 답변해 드립니다!</p>
+              <a href="tel:051-626-0359" className="px-12 py-6 bg-brand-red text-white rounded-2xl font-bold text-lg hover:bg-brand-red/80 transition-colors inline-flex items-center gap-4">
+                <Phone className="w-6 h-6" />
+                전화 문의하기 (051-626-0359)
+              </a>
             </div>
           </div>
         </section>
