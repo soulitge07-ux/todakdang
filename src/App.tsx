@@ -243,21 +243,6 @@ export default function App() {
         { title: "키위 주스", price: "5,500원", description: "새콤달콤 톡 쏘는 그린 비타민 충전", image: "/토닥생과일주스/A키위주스.png", color: "bg-emerald-100" },
         { title: "토마토 주스", price: "5,500원", description: "100% 완숙 토마토만 담은 건강한 진한 맛", image: "/토닥생과일주스/A토마토주스.png", color: "bg-red-50" },
       ]
-    },
-    {
-      name: "Bingsu",
-      title: "토닥타래빙수",
-      subtitle: "신선한 프리미엄 재료로 매일 정성껏 준비합니다 · 부드럽고 시원한 실타래빙수, 취향에 맞는 토핑으로 나만의 빙수를 완성하세요 · 본품만으로도 충분히 맛있지만요 :) (기본제공 한입과일모찌 1구 + 컷팅과일 1컵 + 팥 + 인절미떡 + 콘프라이트 + 초코쿠키분태)",
-      items: [
-        { title: "토닥당 밀크 빙수", price: "9,500원", description: "토닥당의 시그니처, 부드럽고 진한 우유 결의 정석 빙수", image: "/토닥타래빙수/토닥당 밀크빙수.png", color: "bg-orange-50" },
-        { title: "딸기 빙수", price: "12,500원", description: "새빨간 제철 딸기를 듬뿍 올린 클래식 인기 메뉴", image: "/토닥타래빙수/딸기.png", color: "bg-pink-100" },
-        { title: "망고 빙수", price: "12,500원", description: "잘 익은 애플망고의 진득한 단맛이 시원하게 사르르", image: "/토닥타래빙수/망고.png", color: "bg-yellow-100" },
-        { title: "청포도 빙수", price: "12,500원", description: "향긋하고 깔끔한 단맛, 여운까지 우아한 한 그릇", image: "/토닥타래빙수/청포도.png", color: "bg-lime-100" },
-        { title: "멜론 빙수", price: "13,500원", description: "달콤한 멜론과 과일 모찌의 풍성한 조화", image: "/토닥타래빙수/멜론 빙수와 과일 모찌.png", color: "bg-green-50" },
-        { title: "파인애플 빙수", price: "12,500원", description: "톡 쏘는 청량감, 무더운 날을 위한 트로피컬 한 잔", image: "/토닥타래빙수/파인.png", color: "bg-yellow-50" },
-        { title: "녹차 빙수", price: "10,500원", description: "진한 우지말차의 깊은 풍미, 어른들을 위한 한 그릇", image: "/토닥타래빙수/녹차.png", color: "bg-emerald-100" },
-        { title: "초코 빙수", price: "11,500원", description: "진한 초코와 과일 토핑이 어우러진 달콤한 디저트", image: "/토닥타래빙수/초코빙수와 과일 토핑.png", color: "bg-amber-100" },
-      ]
     }
   ];
 
