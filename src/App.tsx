@@ -312,7 +312,13 @@ export default function App() {
               <div className="absolute -top-12 left-1/2 -translate-x-1/2 z-20">
                 <SpeechBubble text="오늘도 수고했어 토닥토닥 ✨" />
               </div>
-              <MochiCharacter className="w-64 h-64 sm:w-96 sm:h-96" type="sparkle" />
+              <motion.img
+                src="/todak_characters/fruity.png"
+                alt="토닥당 캐릭터 fruity"
+                animate={{ y: [0, -12, 0], rotate: [-3, 3, -3] }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                className="w-64 h-64 sm:w-96 sm:h-96 object-contain relative z-10"
+              />
               <motion.div 
                 animate={{ rotate: 360 }}
                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
@@ -324,59 +330,98 @@ export default function App() {
 
         <Marquee text="오늘도 수고한 당신을 위해, 달콤한 위로 한 입 • 토닥당 과일모찌 • " className="bg-white/50 backdrop-blur-sm border-y border-black/5" />
 
-        {/* Brand Story Section */}
-        <section id="brand-story" className="py-32 px-6 sm:px-8 bg-white/40 backdrop-blur-sm">
-          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        {/* Character Introduction Section */}
+        <section id="characters" className="py-32 px-6 sm:px-8 bg-white/40 backdrop-blur-sm overflow-hidden">
+          <div className="max-w-7xl mx-auto">
             <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1 }}
-              className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="text-center mb-20"
             >
-              <img 
-                src="/owner.png"
-                alt="Brand Story"
-                className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-brand-brown/20 to-transparent" />
+              <div className="text-ms-pink font-bold tracking-widest mb-4">MEET OUR FRIENDS</div>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display leading-tight text-brand-brown">
+                토닥당의 작은 친구들
+              </h2>
+              <p className="mt-6 text-base sm:text-lg font-heading opacity-70 max-w-xl mx-auto leading-relaxed">
+                지친 마음에 위로가 필요했던<br />
+                작은 친구의 이야기입니다.
+              </p>
             </motion.div>
-            
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center mb-24">
+              {/* Fruity */}
+              <motion.div
+                initial={{ opacity: 0, x: -40 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                className="flex flex-col items-center text-center"
+              >
+                <motion.img
+                  src="/todak_characters/fruity.png"
+                  alt="프루티"
+                  animate={{ y: [0, -8, 0] }}
+                  transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut" }}
+                  className="w-56 h-56 sm:w-72 sm:h-72 object-contain mb-8 drop-shadow-xl"
+                />
+                <span className="text-xs font-bold tracking-[0.3em] text-ms-pink mb-3">CHARACTER 01</span>
+                <h3 className="text-2xl sm:text-3xl font-display text-brand-brown mb-4">프루티 Fruity</h3>
+                <p className="text-base italic font-display text-ms-pink mb-6 leading-relaxed">
+                  "오늘 하루도, 너무 애썼지…"
+                </p>
+                <p className="text-sm sm:text-base font-heading opacity-75 leading-relaxed max-w-sm">
+                  매일 작은 일들에 마음을 다 써버리는 프루티.
+                  웃으면서도 속으로는 자주 지치고, 누군가 따뜻하게
+                  토닥여 주기를 가만히 기다리는 여린 친구입니다.
+                </p>
+              </motion.div>
+
+              {/* Mozzicat */}
+              <motion.div
+                initial={{ opacity: 0, x: 40 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, delay: 0.15 }}
+                className="flex flex-col items-center text-center"
+              >
+                <motion.img
+                  src="/todak_characters/mozzicat.png"
+                  alt="모찌캣"
+                  animate={{ y: [0, -8, 0], rotate: [-2, 2, -2] }}
+                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                  className="w-56 h-56 sm:w-72 sm:h-72 object-contain mb-8 drop-shadow-xl"
+                />
+                <span className="text-xs font-bold tracking-[0.3em] text-ms-pink mb-3">CHARACTER 02</span>
+                <h3 className="text-2xl sm:text-3xl font-display text-brand-brown mb-4">모찌캣 Mozzicat</h3>
+                <p className="text-base italic font-display text-ms-pink mb-6 leading-relaxed">
+                  "괜찮아, 토닥토닥. 한 입이면 충분해."
+                </p>
+                <p className="text-sm sm:text-base font-heading opacity-75 leading-relaxed max-w-sm">
+                  말없이 옆에 머무는 따스한 친구, 모찌캣.
+                  프루티가 힘들어 보일 때면 가장 달콤한 모찌 한 알을
+                  슬며시 건네며, 작지만 진심 어린 위로를 전합니다.
+                </p>
+              </motion.div>
+            </div>
+
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.2 }}
+              transition={{ duration: 0.8 }}
+              className="max-w-3xl mx-auto text-center bg-white/60 backdrop-blur-sm rounded-[2.5rem] px-8 sm:px-12 py-12 border border-black/5 shadow-sm"
             >
-              <div className="text-ms-pink font-bold tracking-widest mb-4">BRAND STORY</div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display mb-8 leading-tight text-brand-brown">
-                당신의 하루를<br />토닥이는 한 입
-              </h2>
-              <p className="text-lg sm:text-xl italic font-display text-ms-pink mb-10 leading-relaxed">
-                "내가 사라지는 기분이 들 때,<br />저를 살려준 건 과일 한 조각이었습니다."
+              <img
+                src="/todak_characters/Todak_characters.png"
+                alt="모찌캣과 프루티"
+                className="w-full max-w-sm mx-auto object-contain mb-8"
+              />
+              <p className="text-lg sm:text-xl font-display text-brand-brown leading-relaxed mb-3">
+                혼자 버텨내던 프루티에게 모찌캣이 다가와<br />
+                달콤한 한 입을 건넨 순간,
               </p>
-              
-              <div className="space-y-8 text-sm sm:text-base leading-relaxed opacity-80 font-heading text-brand-brown">
-                <p>
-                  감정 노동에 지쳐 퇴근하던 길, <br />
-                  내가 사라지는 기분이 들 때, 저를 다시 숨 쉬게 했던 건, 의외로 아주 사소한 '신선한 과일 한 조각'이었습니다.
-                  그 따뜻한 위로의 기억을 담아 토닥당을 열었습니다.
-                </p>
-                
-                <p>
-                  우리는 화려함보다 '진짜 좋은 재료'가 주는 힘을 믿습니다. <br />
-                  과일 가게를 운영했던 안목으로 매일 공판장에서 직접 최상급 과일만을 엄선하며, 
-                  주문 즉시 가장 신선한 상태로 정성껏 빚어냅니다.
-                </p>
-                
-                <p>
-                  입안 가득 터지는 싱그러운 과즙이 <br />
-                  당신의 고단한 하루를 부드럽게 토닥여주길 바랍니다.
-                </p>
-                
-                <p className="text-xl font-display pt-4">
-                  토닥토닥, 토닥당
-                </p>
-              </div>
+              <p className="text-base sm:text-lg font-heading opacity-70 leading-relaxed">
+                두 친구의 작은 위로가 시작되었습니다.<br />
+                오늘도 토닥당은, 그 마음을 닮은 한 입을 빚어냅니다.
+              </p>
             </motion.div>
           </div>
         </section>
@@ -798,6 +843,63 @@ export default function App() {
                 <div className="absolute -bottom-12 -left-12 w-48 h-48 bg-ms-purple/20 blur-[100px] rounded-full"></div>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Brand Story Section */}
+        <section id="brand-story" className="py-32 px-6 sm:px-8 bg-white/40 backdrop-blur-sm">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1 }}
+              className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl"
+            >
+              <img
+                src="/owner.png"
+                alt="Brand Story"
+                className="w-full h-full object-cover"
+                referrerPolicy="no-referrer"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-brand-brown/20 to-transparent" />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.2 }}
+            >
+              <div className="text-ms-pink font-bold tracking-widest mb-4">BRAND STORY</div>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display mb-8 leading-tight text-brand-brown">
+                당신의 하루를<br />토닥이는 한 입
+              </h2>
+              <p className="text-lg sm:text-xl italic font-display text-ms-pink mb-10 leading-relaxed">
+                "내가 사라지는 기분이 들 때,<br />저를 살려준 건 과일 한 조각이었습니다."
+              </p>
+
+              <div className="space-y-8 text-sm sm:text-base leading-relaxed opacity-80 font-heading text-brand-brown">
+                <p>
+                  감정 노동에 지쳐 퇴근하던 길, <br />
+                  내가 사라지는 기분이 들 때, 저를 다시 숨 쉬게 했던 건, 의외로 아주 사소한 '신선한 과일 한 조각'이었습니다.
+                  그 따뜻한 위로의 기억을 담아 토닥당을 열었습니다.
+                </p>
+
+                <p>
+                  우리는 화려함보다 '진짜 좋은 재료'가 주는 힘을 믿습니다. <br />
+                  과일 가게를 운영했던 안목으로 매일 공판장에서 직접 최상급 과일만을 엄선하며,
+                  주문 즉시 가장 신선한 상태로 정성껏 빚어냅니다.
+                </p>
+
+                <p>
+                  입안 가득 터지는 싱그러운 과즙이 <br />
+                  당신의 고단한 하루를 부드럽게 토닥여주길 바랍니다.
+                </p>
+
+                <p className="text-xl font-display pt-4">
+                  토닥토닥, 토닥당
+                </p>
+              </div>
+            </motion.div>
           </div>
         </section>
 
