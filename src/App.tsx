@@ -415,14 +415,86 @@ export default function App() {
                 className="w-full max-w-sm mx-auto object-contain mb-8"
               />
               <p className="text-lg sm:text-xl font-display text-brand-brown leading-relaxed mb-3">
-                혼자 버텨내던 프루티에게 모찌캣이 다가와<br />
-                달콤한 한 입을 건넨 순간,
+                혼자 버텨내던 프루티에게,<br />
+                모찌캣이 다가와 달콤한 한 입을 건넨 순간
               </p>
               <p className="text-base sm:text-lg font-heading opacity-70 leading-relaxed">
                 두 친구의 작은 위로가 시작되었습니다.<br />
-                오늘도 토닥당은, 그 마음을 닮은 한 입을 빚어냅니다.
+                오늘도 토닥당은,<br />
+                그 마음을 담은 한 입을 빚어냅니다.
               </p>
             </motion.div>
+          </div>
+        </section>
+
+        {/* Brand & Taste - Secret Section */}
+        <section className="py-32 px-6 sm:px-8 bg-white overflow-hidden">
+          <div className="max-w-[1800px] mx-auto">
+            <div className="text-center mb-24">
+              <div className="text-sm font-heading tracking-widest mb-4 text-ms-pink font-bold">BRAND & TASTE</div>
+              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-display leading-tight">토닥당이 유독 맛있는<br />3가지 고집</h2>
+            </div>
+
+            <div className="grid lg:grid-cols-3 gap-12 relative">
+              {/* Decorative Line */}
+              <div className="hidden lg:block absolute top-1/2 left-0 w-full h-px bg-black/5 -translate-y-1/2 z-0"></div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="relative z-10 bg-white p-12 rounded-[3rem] border border-black/5 shadow-sm hover:shadow-2xl transition-all duration-500 group"
+              >
+                <div className="w-16 h-16 bg-pink-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-ms-pink group-hover:text-white transition-colors duration-500">
+                  <Sparkles className="w-8 h-8" />
+                </div>
+                <div className="mb-6">
+                  <span className="text-ms-pink font-bold text-sm tracking-wider block mb-2">[과일 전문가의 안목]</span>
+                  <h3 className="text-xl sm:text-2xl font-display leading-tight">"공판장 직송,<br />1%의 프리미엄"</h3>
+                </div>
+                <p className="font-heading text-base opacity-60 leading-relaxed">
+                  과일 가게 운영 경험을 바탕으로 매일 아침 공판장에서 가장 신선하고 당도가 높은 최상급 과일만을 직접 검수하여 가져옵니다. 타협하지 않는 원재료가 토닥당 맛의 시작입니다.
+                </p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1 }}
+                className="relative z-10 bg-white p-12 rounded-[3rem] border border-black/5 shadow-sm hover:shadow-2xl transition-all duration-500 group"
+              >
+                <div className="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-ms-blue group-hover:text-white transition-colors duration-500">
+                  <Leaf className="w-8 h-8" />
+                </div>
+                <div className="mb-6">
+                  <span className="text-ms-blue font-bold text-sm tracking-wider block mb-2">[당일 생산의 쫄깃함]</span>
+                  <h3 className="text-xl sm:text-2xl font-display leading-tight">"공장 떡과는<br />비교할 수 없는 정성"</h3>
+                </div>
+                <p className="font-heading text-base opacity-60 leading-relaxed">
+                  기성품 떡이 아닌, 방앗간에서 갓 만든 떡만을 사용합니다. 아침마다 준비한 찰기 있는 떡으로 주문 즉시 빚어내어, 입안에 달라붙지 않는 기분 좋은 쫄깃함을 선사합니다.
+                </p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.2 }}
+                className="relative z-10 bg-white p-12 rounded-[3rem] border border-black/5 shadow-sm hover:shadow-2xl transition-all duration-500 group"
+              >
+                <div className="w-16 h-16 bg-purple-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-ms-purple group-hover:text-white transition-colors duration-500">
+                  <Zap className="w-8 h-8" />
+                </div>
+                <div className="mb-6">
+                  <span className="text-ms-purple font-bold text-sm tracking-wider block mb-2">[황금 비율의 얇은 피]</span>
+                  <h3 className="text-xl sm:text-2xl font-display leading-tight">"과즙을 극대화하는<br />0.1mm의 기술"</h3>
+                </div>
+                <p className="font-heading text-base opacity-60 leading-relaxed">
+                  과일 본연의 맛을 가리지 않도록 얇게 편 떡 피와 저당 앙금의 황금 비율을 찾았습니다. 한 입 베어 무는 순간 터져 나오는 풍부한 과즙과 부드러운 조화를 느껴보세요.
+                </p>
+              </motion.div>
+            </div>
           </div>
         </section>
 
@@ -452,16 +524,16 @@ export default function App() {
                     )}
                   </div>
                   
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8">
+                  <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-8">
                     {category.items.map((item, index) => (
-                      <motion.div 
+                      <motion.div
                         key={index}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: index * 0.05 }}
-                        className={`group relative p-8 rounded-[2.5rem] ${item.color} border border-black/5 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 cursor-pointer flex flex-col h-full`}
+                        className={`group relative p-4 sm:p-8 rounded-[1.5rem] sm:rounded-[2.5rem] ${item.color} border border-black/5 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 cursor-pointer flex flex-col h-full`}
                       >
-                        <div className="aspect-square rounded-3xl overflow-hidden mb-8 bg-white/50 shadow-inner p-6">
+                        <div className="aspect-square rounded-2xl sm:rounded-3xl overflow-hidden mb-4 sm:mb-8 bg-white/50 shadow-inner p-3 sm:p-6">
                           <img
                             src={item.image}
                             alt={item.title}
@@ -527,77 +599,6 @@ export default function App() {
           </div>
         </section>
 
-        {/* Brand & Taste - Secret Section */}
-        <section className="py-32 px-6 sm:px-8 bg-white overflow-hidden">
-          <div className="max-w-[1800px] mx-auto">
-            <div className="text-center mb-24">
-              <div className="text-sm font-heading tracking-widest mb-4 text-ms-pink font-bold">BRAND & TASTE</div>
-              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-display leading-tight">토닥당이 유독 맛있는<br />3가지 고집</h2>
-            </div>
-
-            <div className="grid lg:grid-cols-3 gap-12 relative">
-              {/* Decorative Line */}
-              <div className="hidden lg:block absolute top-1/2 left-0 w-full h-px bg-black/5 -translate-y-1/2 z-0"></div>
-              
-              <motion.div 
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="relative z-10 bg-white p-12 rounded-[3rem] border border-black/5 shadow-sm hover:shadow-2xl transition-all duration-500 group"
-              >
-                <div className="w-16 h-16 bg-pink-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-ms-pink group-hover:text-white transition-colors duration-500">
-                  <Sparkles className="w-8 h-8" />
-                </div>
-                <div className="mb-6">
-                  <span className="text-ms-pink font-bold text-sm tracking-wider block mb-2">[과일 전문가의 안목]</span>
-                  <h3 className="text-xl sm:text-2xl font-display leading-tight">"공판장 직송,<br />1%의 프리미엄"</h3>
-                </div>
-                <p className="font-heading text-base opacity-60 leading-relaxed">
-                  과일 가게 운영 경험을 바탕으로 매일 아침 공판장에서 가장 신선하고 당도가 높은 최상급 과일만을 직접 검수하여 가져옵니다. 타협하지 않는 원재료가 토닥당 맛의 시작입니다.
-                </p>
-              </motion.div>
-
-              <motion.div 
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.1 }}
-                className="relative z-10 bg-white p-12 rounded-[3rem] border border-black/5 shadow-sm hover:shadow-2xl transition-all duration-500 group"
-              >
-                <div className="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-ms-blue group-hover:text-white transition-colors duration-500">
-                  <Leaf className="w-8 h-8" />
-                </div>
-                <div className="mb-6">
-                  <span className="text-ms-blue font-bold text-sm tracking-wider block mb-2">[당일 생산의 쫄깃함]</span>
-                  <h3 className="text-xl sm:text-2xl font-display leading-tight">"공장 떡과는<br />비교할 수 없는 정성"</h3>
-                </div>
-                <p className="font-heading text-base opacity-60 leading-relaxed">
-                  기성품 떡이 아닌, 방앗간에서 갓 만든 떡만을 사용합니다. 아침마다 준비한 찰기 있는 떡으로 주문 즉시 빚어내어, 입안에 달라붙지 않는 기분 좋은 쫄깃함을 선사합니다.
-                </p>
-              </motion.div>
-
-              <motion.div 
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.2 }}
-                className="relative z-10 bg-white p-12 rounded-[3rem] border border-black/5 shadow-sm hover:shadow-2xl transition-all duration-500 group"
-              >
-                <div className="w-16 h-16 bg-purple-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-ms-purple group-hover:text-white transition-colors duration-500">
-                  <Zap className="w-8 h-8" />
-                </div>
-                <div className="mb-6">
-                  <span className="text-ms-purple font-bold text-sm tracking-wider block mb-2">[황금 비율의 얇은 피]</span>
-                  <h3 className="text-xl sm:text-2xl font-display leading-tight">"과즙을 극대화하는<br />0.1mm의 기술"</h3>
-                </div>
-                <p className="font-heading text-base opacity-60 leading-relaxed">
-                  과일 본연의 맛을 가리지 않도록 얇게 편 떡 피와 저당 앙금의 황금 비율을 찾았습니다. 한 입 베어 무는 순간 터져 나오는 풍부한 과즙과 부드러운 조화를 느껴보세요.
-                </p>
-              </motion.div>
-            </div>
-          </div>
-        </section>
-
         {/* Order & Nudge - Order Guide Section */}
         <section className="py-32 px-6 sm:px-8 bg-watercolor-yellow/10 border-b border-black/5">
           <div className="max-w-[1800px] mx-auto">
@@ -656,13 +657,13 @@ export default function App() {
                   </p>
                 </div>
                 <div className="mt-12 pt-12 border-t border-black/5 flex items-center justify-between">
-                  <div className="flex items-center gap-2 text-brand-red font-bold">
+                  <a href="tel:051-626-0359" className="flex items-center gap-2 text-brand-red font-bold hover:opacity-80 transition-opacity">
                     <Phone className="w-5 h-5" />
                     <div className="flex flex-col">
                       <span>매장 전화 문의</span>
                       <span className="text-lg tracking-wider">051-626-0359</span>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </motion.div>
             </div>
@@ -1058,13 +1059,13 @@ export default function App() {
                     answer={
                       <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
                         <p className="opacity-60">최소 3~5일 전, 네이버 톡톡이나 매장 전화를 통해 문의해 주세요. 상담 시 [날짜 / 예상 인원 / 선호 메뉴]를 알려주시면 더 빠른 상담이 가능합니다.</p>
-                        <div className="shrink-0 flex items-center gap-2 px-8 py-4 bg-brand-brown text-white rounded-2xl font-bold">
+                        <a href="tel:051-626-0359" className="shrink-0 flex items-center gap-2 px-8 py-4 bg-brand-brown text-white rounded-2xl font-bold hover:bg-brand-brown/80 transition-colors">
                           <Phone className="w-4 h-4" />
                           <div className="flex flex-col text-left">
                             <span>단체 주문 문의하기</span>
                             <span className="text-base tracking-wider">051-626-0359</span>
                           </div>
-                        </div>
+                        </a>
                       </div>
                     }
                   />
